@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae Nathaly Berríos</title>
-    
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.csss">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/ba5eceb562.js" crossorigin="anonymous"></script>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -16,79 +19,158 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-success p-3 navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Curriculum Vitae</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+            <a class="navbar-brand" href="#">Curriculum Vitae</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portafolio</a>
+                    </li>
 
-    <!--<header class="profile">
-    <img src="./assets/imagen.desafio.jpeg" alt="Foto Perfil" width="10%">
-    <h3 style="color: gray; font-size: 40px">Nathaly Berríos</h3>
-    <h4>Resumen</h4>
-    <p>Nathaly, nacida en Santiago de Chile, egresada de la Unviersidad de Santiago de Chile. Con estudios relacionados
-        al área de la química y física, hoy se encuentra en busqueda de un nuevo desafio, explorando los lenguajes de la
-        programacion y el mundo del desarrollo.</p>
-    </header>-->
-
-    <header id="Profile-Section" class="text-black mt-3">
-        <div class="container">
-            <div class="img1">
-                <img src="./assets/imagen.desafio.jpeg
-                " alt="img1">
+                </ul>
             </div>
-            <div class="ms-auto col-12 col-md-7 ">
-                <h1 class="display-1 fw-bold my-5">
-                   Nathaly Berríos González
-                </h1>
-                <p class="my-5">
-                    Profesional con capacidad de trabajar en equipo, con buena comunicación, empática y respetuosa. Con capacidad de trabajar bajo presión, responsable, proactiva, con excelentes relaciones interpersonales, buena disposición, perseverante y adaptable al cambio. Con gran interés de desarrollo y crecimiento profesional, aprender día a día y poder seguir desarrollándose. 
+        </div>
+    </nav>
+
+
+    <!--header-->
+    <header id="Profile-Section" class="text-black mt-3 pt-3">
+        <div class="d-flex">
+            <div class="flex-shrink-0">
+                <img src="./assets/img/imagen.desafio.jpeg" class="rounded-circle" alt="img1">
+            </div>
+            <div class="flex-grow-1 ms-5">
+                <h4 class="fw-bold my-5"><i class="fa-solid fa-user"></i>
+                    Nathaly Berríos González
+                </h4>
+                <p class="my-3">
+                    Profesional con capacidad de trabajar en equipo, con buena comunicación, empática y respetuosa. Con
+                    capacidad de trabajar bajo presión, responsable, proactiva, con excelentes relaciones
+                    interpersonales, buena disposición, perseverante y adaptable al cambio. Con gran interés de
+                    desarrollo y crecimiento profesional, aprender día a día y poder seguir desarrollándose.
                 </p>
+                <br>
+                <h4><i class="fa-regular fa-address-book"></i> Datos Personales</h4>
+                <ul class="skills">
+                    <li>Nombre: Nathaly Mayari Berríos González</li>
+                    <li>Correo electrónico: nathalybo78@gmail.com</li>
+                    <li>Número de contacto: +56994440608</li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!--sections-->
+    <section class="academic-section mt-5 bg-success">
+        <h4><i class="fa-solid fa-pen"></i> Formación Académica</h4>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">2022 Curso DesafíoLatam</div>
+                    Fundamentos Desarrollo Web 
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">2019-2021 Enseñanza Técnico Universitario</div>
+                    Técnico Universitario en Análisis Químico y Físico
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">2017-2018 Enseñanza superior</div>
+                    Química, Licenciatura en Química
+                </div>
+            </li>
+        </ul>
+    </section>
+  
+
+    <!--Cards-->
+    <section class="portafolio mt-5 text-center pt-3 bg-success">
+        <h4>Portafolio</h4>
+        <br>
+        <div class="container text-black">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/cv.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Cv-HTML</h5>
+                            <p class="card-text">Conocimientos de HTML</p>
+                            <a href="https://github.com/NathalyBerrios/cv.html.git" class="btn btn-success">Github</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/landing.page.png" class="card-img-top" alt="img2">
+                        <div class="card-body">
+                            <h5 class="card-title">Landing page</h5>
+                            <p class="card-text">Implementación de CSS</p>
+                            <a href="https://github.com/NathalyBerrios/landing.page.git" class="btn btn-success">Github</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/iguana.page.png" class="card-img-top" alt="img3">
+                        <div class="card-body">
+                            <h5 class="card-title">Iguana page</h5>
+                            <p class="card-text">Posicionamiento en CSS</p>
+                            <a href="https://github.com/NathalyBerrios/iguana.page.git" class="btn btn-success">Github</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/cuppon.2.png" class="card-img-top" alt="img4">
+                        <div class="card-body">
+                            <h5 class="card-title">Cuppon</h5>
+                            <p class="card-text">Conocimientos de Bootstrap</p>
+                            <a href="https://github.com/NathalyBerrios/bootstrap.git" class="btn btn-success">Github</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./assets/img/github.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Github</h5>
+                            <p class="card-text">Conocimientos de Github</p>
+                            <a href="https://github.com/NathalyBerrios/fdsw-github.git" class="btn btn-success">Github</a>
+                        </div>
+                    </div>
+
+                </div>
                 
             </div>
         </div>
-    </header
+        <br>
+    </section>
+    
 
-    <h4>Datos Personales</h4>
-    <ul class="skills">
-        <li>Nombre: Nathaly Mayari Berríos González</li>
-        <li>Lugar de Nacimiento: Santiago de Chile</li>
-        <li>Fecha de Nacimiento: 22 de Febrero de 1999</li>
-    </ul>
-    <h4>Formación</h4>
-    <p style="color:red">Comence la educación superior el año 2017 en la Unviersidad de Santiago, en la Facultad de Química y Biología
-        finalizanco mis estudios el año 2020. Obteniendo el titulo de Tecnica Universitaria en análisis Físico y
-        Químico.</p>
-    <h4>Premios y Reconocimientos</h4>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam in quasi consequuntur quae modi commodi porro
-        reprehenderit quis esse, earum dolores veritatis debitis architecto qui magnam a eaque sapiente voluptas.</p>
-    <ol>
-        <li>Primer Premio (2016)</li>
-        <li>Segundo Premio (2017)</li>
-        <li>Tercer Premio (2020)</li>
-    </ol>
-    <p>Fuente: <a href="https://www.linkedin.com/in/nathaly-berr%C3%ADos-gonz%C3%A1lez-a4228621a" target="_blank"
-            rel="noopenernoreferrer">Linkedin</a></p>
-
+    <!--footer-->
+    <footer class="text-center bg-black p-3 text-light">
+        <p><b>Contacto</b> <a href="https://www.linkedin.com/in/nathaly-berr%C3%ADos-gonz%C3%A1lez-a4228621a"
+                target="_blank" rel="noopenernoreferrer">Linkedin</a></p>
+    </footer>
 
 </body>
 
